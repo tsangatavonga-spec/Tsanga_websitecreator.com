@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tavonga Tsanga | Website Creator: Fast, Affordable Websites for Any Business</title>
+<style>
+:root{--bg:#f6f5ff;--surface:#ffffff;--text:#15122b;--muted:#5a5675;--brand:#5b3df5;--brand2:#2ee6a6;--dark:#15122b;--line:#e1ddf7;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d0b1c;--surface:#171430;--text:#f0eeff;--muted:#a9a4cc;--brand:#8b73ff;--dark:#080716;--line:#2a2550}}
+:root[data-theme="dark"]{--bg:#0d0b1c;--surface:#171430;--text:#f0eeff;--muted:#a9a4cc;--brand:#8b73ff;--dark:#080716;--line:#2a2550}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.55}
+.wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+header{background:var(--dark);position:sticky;top:env(safe-area-inset-top,0px);z-index:5}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-weight:800;font-size:1.15rem;color:#fff;text-decoration:none}
+.logo span{color:var(--brand2)}
+nav a{color:#cfcaf5;text-decoration:none;margin-left:16px;font-size:.93rem}
+nav a:hover{color:var(--brand2)}
+.hero{background:radial-gradient(circle at 80% 10%,#3a2aa8,transparent 55%),var(--dark);color:#fff;padding:60px 0 54px}
+.badge{display:inline-block;border:1px solid var(--brand2);color:var(--brand2);padding:6px 14px;border-radius:99px;font-weight:600;font-size:.88rem;margin-bottom:14px}
+.hero h1{font-size:clamp(2.1rem,6vw,3.5rem);line-height:1.08;margin:0 0 14px;max-width:760px}
+.hero h1 em{font-style:normal;color:var(--brand2)}
+.hero p{max-width:600px;color:#cfcaf5;font-size:1.05rem}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.btn{display:inline-block;padding:13px 22px;border-radius:8px;text-decoration:none;border:2px solid var(--brand2);font:inherit;font-weight:700;cursor:pointer}
+.btn.p{background:var(--brand2);color:#0b1b17}
+.btn.s{color:var(--brand2);background:transparent}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:38px}
+.stat{border:1px solid #3a3470;border-radius:12px;padding:14px}
+.stat b{display:block;font-size:1.3rem;color:var(--brand2)}
+.stat span{font-size:.88rem;color:#cfcaf5}
+section{padding:52px 0}
+h2{font-size:1.8rem;margin:0 0 8px}
+.sub{color:var(--muted);margin:0 0 28px;max-width:620px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px}
+.ico{width:44px;height:44px;border-radius:10px;background:var(--brand);color:#fff;display:grid;place-items:center;font-size:1.3rem;margin-bottom:10px}
+.card h3{margin:0 0 4px;font-size:1.05rem}
+.card p{margin:0;color:var(--muted);font-size:.94rem}
+.alt{background:var(--surface);border-block:1px solid var(--line)}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.step{padding:18px;border-left:4px solid var(--brand);background:var(--bg);border-radius:8px}
+.step::before{counter-increment:s;content:counter(s);font-weight:800;font-size:1.6rem;color:var(--brand);display:block}
+.step b{display:block}
+.step span{color:var(--muted);font-size:.94rem}
+.plan.hot{border:2px solid var(--brand)}
+.tag{display:inline-block;font-size:.75rem;font-weight:700;background:var(--brand2);color:#0b1b17;padding:3px 10px;border-radius:99px;margin-bottom:8px}
+.plan ul{padding-left:18px;margin:10px 0 0;color:var(--muted);font-size:.94rem}
+.deal{background:linear-gradient(120deg,var(--brand),#3a2aa8);color:#fff;border-radius:14px;padding:28px;text-align:center}
+.deal p{margin:0;opacity:.95}
+details{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin-bottom:10px}
+summary{font-weight:700;cursor:pointer}
+details p{color:var(--muted);margin:8px 0 0}
+.contact{background:var(--dark);color:#fff}
+.contact .sub{color:#b9b4e6}
+.box{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+.cbtn{display:block;margin:10px 0;text-align:center}
+form{display:grid;gap:10px}
+input,select,textarea{width:100%;padding:12px;border-radius:8px;border:1px solid #3a3470;background:#1b1740;color:#fff;font:inherit}
+footer{background:#05040f;color:#8d89b5;text-align:center;padding:18px;font-size:.85rem}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a class="logo" href="#top">TAVONGA <span>TSANGA</span></a>
+<nav><a href="#services">Services</a><a href="#work">Work</a><a href="#plans">Plans</a><a href="#contact">Contact</a></nav></div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+<span class="badge">Website Creator · Fast · Affordable</span>
+<h1>Your business online, <em>fast</em> and at a price that makes sense.</h1>
+<p>I’m Tavonga Tsanga. I build professional websites for small businesses and big companies alike, with quick delivery, honest pricing and a site that works on every phone.</p>
+<div class="btns"><a class="btn p" href="#contact">Get a Free Quote</a><a class="btn s" href="#work">See My Work</a></div>
+<div class="stats">
+<div class="stat"><b>Fast</b><span>Quick turnaround</span></div>
+<div class="stat"><b>Cheaper</b><span>Fair, negotiable prices</span></div>
+<div class="stat"><b>Mobile-ready</b><span>Looks great on phones</span></div>
+<div class="stat"><b>Any size</b><span>Small shops to large firms</span></div>
+</div>
+</div></div>
+
+<section id="services"><div class="wrap">
+<h2>What I Build</h2><p class="sub">Whatever your business does, I can build a website that shows it off and brings in customers.</p>
+<div class="grid">
+<div class="card"><div class="ico">🏢</div><h3>Business Websites</h3><p>Professional company sites with your services, contact details and story.</p></div>
+<div class="card"><div class="ico">🛒</div><h3>Online Shops</h3><p>Show your products and let customers order by WhatsApp or call.</p></div>
+<div class="card"><div class="ico">🎨</div><h3>Portfolios</h3><p>Show off your work if you are a creative, a freelancer or a brand.</p></div>
+<div class="card"><div class="ico">📍</div><h3>Local Service Sites</h3><p>Mechanics, transport, salons, restaurants and more, easy to find and contact.</p></div>
+<div class="card"><div class="ico">🏗️</div><h3>Large Company Sites</h3><p>Multi-page sites for bigger businesses that need a strong, trusted image.</p></div>
+<div class="card"><div class="ico">🔧</div><h3>Updates &amp; Fixes</h3><p>Changes to an existing website, new pages, new look, fixes.</p></div>
+</div></div></section>
+
+<section class="alt"><div class="wrap">
+<h2>Why Choose Me</h2><p class="sub">You get a website that works, without paying agency prices or waiting for months.</p>
+<div class="grid">
+<div class="card"><div class="ico">⚡</div><h3>Fast Delivery</h3><p>Quick turnaround, so you start getting customers online sooner.</p></div>
+<div class="card"><div class="ico">💰</div><h3>Cheaper Prices</h3><p>Affordable rates with room to negotiate, so any business can get online.</p></div>
+<div class="card"><div class="ico">📱</div><h3>Mobile Friendly</h3><p>Most customers browse on their phones, so your site is built for them first.</p></div>
+<div class="card"><div class="ico">💬</div><h3>WhatsApp &amp; Call Buttons</h3><p>Customers can reach you in one tap straight from the site.</p></div>
+<div class="card"><div class="ico">🎯</div><h3>Made For Your Business</h3><p>Your colours, your words, your style. Never a cookie-cutter site.</p></div>
+<div class="card"><div class="ico">🤝</div><h3>Friendly Support</h3><p>Questions or changes after launch? Just message me.</p></div>
+</div></div></section>
+
+<section id="work"><div class="wrap">
+<h2>Recent Work</h2><p class="sub">A few examples of the kind of sites I make.</p>
+<div class="grid">
+<div class="card"><div class="ico">🚚</div><h3>Tenmark Transport</h3><p>Website for a trucking company moving rubble and construction materials, with a full fleet showcase and WhatsApp quote form.</p></div>
+<div class="card"><div class="ico">🚗</div><h3>Tsanga Logistics</h3><p>24/7 mobile mechanic service site with services, how-it-works steps and one-tap calling.</p></div>
+</div></div></section>
+
+<section id="how" class="alt"><div class="wrap">
+<h2>How It Works</h2><p class="sub">Getting your website is simple.</p>
+<div class="steps">
+<div class="step"><b>Tell me about your business</b><span>Message me what you do, your services and your contact details.</span></div>
+<div class="step"><b>I design it</b><span>I build your site in your colours and show you the result.</span></div>
+<div class="step"><b>You review</b><span>Want changes? Tell me and I’ll adjust it quickly.</span></div>
+<div class="step"><b>Go live</b><span>Your website is published and ready to share with customers.</span></div>
+</div></div></section>
+
+<section id="plans"><div class="wrap">
+<h2>Packages</h2><p class="sub">Pick what fits your business. Every price is negotiable, so message me for a quote.</p>
+<div class="grid">
+<div class="card plan"><h3>Starter</h3><p>For small businesses and individuals.</p><ul><li>One-page website</li><li>Mobile friendly</li><li>Call &amp; WhatsApp buttons</li><li>Fast delivery</li></ul></div>
+<div class="card plan hot"><span class="tag">MOST POPULAR</span><h3>Business</h3><p>For growing businesses.</p><ul><li>Multi-section website</li><li>Services, gallery &amp; contact form</li><li>Your branding &amp; colours</li><li>Free small edits after launch</li></ul></div>
+<div class="card plan"><h3>Company</h3><p>For large businesses and organisations.</p><ul><li>Multi-page website</li><li>Custom design &amp; features</li><li>Ongoing support</li><li>Priority service</li></ul></div>
+</div></div></section>
+
+<section class="alt"><div class="wrap">
+<div class="deal"><h2>Cheap. Fast. Professional.</h2><p>Tell me your budget and what you need, and we’ll find a price that works for you.</p></div>
+</div></section>
+
+<section><div class="wrap">
+<h2>Questions</h2><p class="sub">Quick answers.</p>
+<details><summary>How long does a website take?</summary><p>I work fast. Small sites can be ready quickly, and I’ll give you a clear timeline when we talk about your project.</p></details>
+<details><summary>Is the price really negotiable?</summary><p>Yes. Message me your budget and what you need, and we’ll agree on a fair price.</p></details>
+<details><summary>Do I need to know anything technical?</summary><p>No. Just tell me about your business, and I handle the rest.</p></details>
+<details><summary>Can you change my site after it’s live?</summary><p>Yes. Send me a message anytime for updates, new pages or fixes.</p></details>
+<details><summary>Will it work on phones?</summary><p>Yes, every site I build is designed to look good on phones, tablets and computers.</p></details>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+<h2>Let’s Build Your Website</h2><p class="sub">Tell me about your business and get a free quote.</p>
+<div class="box">
+<div>
+<p><strong>Tavonga Tsanga</strong><br>Website Creator</p>
+<a class="btn p cbtn" id="call" href="#">Call 0771 229 671</a>
+<a class="btn s cbtn" id="wa" href="#">WhatsApp 0771 229 671</a>
+</div>
+<form id="f">
+<input id="n" placeholder="Your name" required>
+<input id="b" placeholder="Business name">
+<select id="t"><option>Small business website</option><option>Online shop</option><option>Portfolio</option><option>Large company website</option><option>Update my existing site</option></select>
+<textarea id="m" rows="3" placeholder="Tell me what you need"></textarea>
+<button class="btn p" type="submit">Send on WhatsApp</button>
+</form></div>
+</div></section>
+</main>
+<footer>© 2026 Tavonga Tsanga · Website Creator · Call or WhatsApp 0771 229 671</footer>
+
+<script>
+var PHONE="263771229671";
+document.getElementById("call").href="tel:+"+PHONE;
+var w=document.getElementById("wa");w.href="https://wa.me/"+PHONE;w.target="_blank";
+document.getElementById("f").addEventListener("submit",function(e){e.preventDefault();
+var g=function(i){return document.getElementById(i).value};
+var txt="Hello Tavonga, I'm "+g("n")+(g("b")?" from "+g("b"):"")+". I need: "+g("t")+". "+g("m");
+window.open("https://wa.me/"+PHONE+"?text="+encodeURIComponent(txt),"_blank");});
+</script>
+</body>
+</html>
